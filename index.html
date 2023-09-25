@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 8 Projeto 2 - Ebac | Agenda de Contatos</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            
+            <h1>Agenda de Contatos</h1>
+        </header>
+
+        <table border="1">
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+            </tr>
+            <tr>
+                <td>Rafael Santilli Machado</td>
+                <td>(11) 9999-99999</td>
+            </tr>
+        </table>
+
+        <h2>Adicionar Contato</h2>
+        <form id="formularioContato">
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome aqui">
+            <br>
+            <input type="text" id="telefone" name="telefone" required placeholder="Digite um número de telefone" maxlength="15">
+            <br>
+            <input class="cadastrar" type="button" value="Cadastrar" onclick="adicionarContato()">
+        </form>
+    </div>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
